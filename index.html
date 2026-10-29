@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <h1>❅•꙳⋆Galeria de Imagens⋆꙳•❅</h1>
+        <p>Explore nossas imagens por categoria</p>
+    </header>
+
+     <nav class="filtros">
+        <button class="filtro ativo" data-filtro="todas"> Todas </button>
+
+        <button class="filtro" data-filtro="elsa"> Elsa </button>
+
+        <button class="filtro" data-filtro="irmas"> Ana e Elsa </button>
+
+         <button class="filtro" data-filtro="outros"> Outros </button>
+     </nav>
+
+     <p id="totalImagens" class="total"></p>
+
+     <main class="galeria">
+         <img src="assets/Irmas1.jpg" alt="Ana e Elsa" class="miniatura destaque" data-categoria="irmas" tabindex="0">
+  
+        <img src="assets/Outros1.jpg" alt="Outros" class="miniatura" data-categoria="outros" tabindex="0">
+
+        <img src="assets/Irmas2.jpg" alt="Ana e Elsa" class="miniatura" data-categoria="irmas" tabindex="0">
+
+        <img src="assets/Elsa3.jpg" alt="Elsa" class="miniatura horizontal" data-categoria="elsa" tabindex="0">
+
+        <img src="assets/Elsa2.jpg" alt="Ana e Elsa" class="miniatura" data-categoria="elsa" tabindex="0"> 
+
+        <img src="assets/Elsa1.jpg" alt="Elsa" class="miniatura vertical" data-categoria="elsa" tabindex="0">
+
+        <img src="assets/Outros3.jpg" alt="Ana e Elsa" class="miniatura horizontal" data-categoria="outros" tabindex="0">
+
+        <img src="assets/Irmas3.jpg" alt="Ana e Elsa" class="miniatura vertical" data-categoria="irmas" tabindex="0">
+
+        <img src="assets/Irmas4.jpg" alt="Ana e Elsa" class="miniatura horizontal" data-categoria="irmas" tabindex="0">
+
+         <img src="assets/Outros4.jpg" alt="outros" class="miniatura" data-categoria="outros" tabindex="0">
+
+     </main>
+
+     <div id="modal" class="modal"> <button id="fechar" class="fechar">&times;</button>
+        <button id="anterior" class="navegacao anterior">&#10094;</button>
+        <div class="modal-conteudo">
+            <img src="" alt="Imagem Ampliada" id="ImagemModal">
+            <div class="legenda">
+                <span id="contador"></span>
+                <span id="nomeImagem"></span>
+            </div>
+        </div>
+        <button id="proximo" class="navegacao proximo">&#10095;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
